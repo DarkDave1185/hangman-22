@@ -1,0 +1,114 @@
+.hangman-base {
+    position: relative;
+}
+/* NOOSE PARTS */
+.hangman {
+    background: black;
+}
+.hangman.tip {
+    height: 50px;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.hangman.top{
+    height: 10px;
+    width: 200px;
+    margin-left: 120px;
+}
+.hangman.middle{
+    height: 500px;
+    width: 10px;
+    margin-left: 120px;
+}
+.hangman.bottom{
+    height: 10px;
+    width: 250px;
+}
+
+/* BODY PARTS */
+
+.hangman-corpse {
+    width: 260px;
+    height: 500px;
+    position: absolute;
+    top: 30px;
+    right: -130px;
+}
+.hangman-corpse.head {
+    background: url("./Assets/body1.svg");
+    background-position: center;
+}
+.hangman-corpse.body {
+    background: url("./Assets/body2.svg");
+    background-position: center;
+}
+.hangman-corpse.rarm {
+    background: url("./Assets/body3.svg");
+    background-position: center;
+}
+.hangman-corpse.larm {
+    background: url("./Assets/body4.svg");
+    background-position: center;
+}
+.hangman-corpse.rleg {
+    background: url("./Assets/body5.svg");
+    background-position: center;
+}
+.hangman-corpse.lleg {
+    background: url("./Assets/body6.svg");
+    background-position: center;
+} 
+
+/* -- RESPONSIVE --*/
+
+@media screen and (min-width:64em) {
+
+}
+@media screen and (max-width:40em) {
+    .hangman-base {
+        scale: 0.7;
+        left: -50px;
+    }
+}
+@media screen and (max-width:23.4em) {
+    
+    /* NOOSE PARTS */
+    .hangman.tip {
+        height: 20px;
+        width: 5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .hangman.top{
+        height: 5px;
+        width: 100px;
+        margin-left: 60px;
+    }
+    .hangman.middle{
+        height: 250px;
+        width: 5px;
+        margin-left: 60px;
+    }
+    .hangman.bottom{
+        height: 5px;
+        width: 125px;
+    }
+    /* BODY PARTS */
+    .hangman-corpse {
+        top: -105px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .hangman-corpse.head,
+    .hangman-corpse.body,
+    .hangman-corpse.rarm,
+    .hangman-corpse.larm,
+    .hangman-corpse.rleg,
+    .hangman-corpse.lleg {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}

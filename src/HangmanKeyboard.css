@@ -1,0 +1,6 @@
+.keyboard-base {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    align-self: stretch;
+    gap: .5rem;
+}
